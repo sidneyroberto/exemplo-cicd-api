@@ -54,6 +54,8 @@ jobs:
 
       - name: Merge to main
         run: |
+          git add .
+          git commit -m "adding dist folder"
           git fetch --unshallow
           git checkout main
           git pull
